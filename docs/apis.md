@@ -115,35 +115,39 @@ AngularJS API Help
 + angular.equals
 + angular.extend
     + 继承，将src中的所有属性挂载到des对象上;
-```js
-var des = {};
-var srcs = {
-    name: 'misko', 
-    gender: 'male',
-    geter: function(){
-       
-    }
-};
-angular.extend(des, srcs);
-console.log(des);
-```
+    ```js
+    var des = {};
+    var srcs = {
+        name: 'misko', 
+        gender: 'male',
+        geter: function(){
+           
+        }
+    };
+    angular.extend(des, srcs);
+    console.log(des);
+    ```
+
     + 输出：
-> gender: "male"
-> geter: function (){}
-> name: "misko"
+
+    > gender: "male"
+    > geter: function (){}
+    > name: "misko"
 
 + angular.forEach
     + 遍历对象或者数组并对每一项相应相应的操作;
-```js
-    var values = {name: 'misko', gender: 'male'};
-    var log = [];
-    angular.forEach(values, function(value, key){
-       this.push(key + ': ' + value);
-    }, log);
-```
+    ```js
+        var values = {name: 'misko', gender: 'male'};
+        var log = [];
+        angular.forEach(values, function(value, key){
+           this.push(key + ': ' + value);
+        }, log);
+    ```
+
     + 输出结果为:
-> 0:"name:misko"
-> 1:"gender:male"
+
+    > 0:"name:misko"
+    > 1:"gender:male"
 
 + angular.fromJson
 + angular.identity
@@ -161,8 +165,9 @@ console.log(des);
 + angular.mock
 + angular.module
     + 创建/获取模块
-> When passed two or more arguments, a new module is created.  If passed only one argument, an existing module (the name passed as the first argument to `module`) is retrieved.
-以上为：“当传递两个及以上参数时，创建一个模块，当传递一个参数时，调用已经存在的模块！”
+    
+    > When passed two or more arguments, a new module is created.  If passed only one argument, an existing module (the name passed as the first argument to `module`) is retrieved.
+    以上为：“当传递两个及以上参数时，创建一个模块，当传递一个参数时，调用已经存在的模块！”
 
 
 + angular.noop
